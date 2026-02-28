@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="LoginTestSuite" parallel="tests" thread-count="2">
+    <test name="LoginTestChrome">
+        <classes>
+            <class name="LoginTest">
+                <parameters>
+                    <parameter name="browser" value="chrome"/>
+                </parameters>
+            </class>
+        </classes>
+    </test>
+
+    <test name="LoginTestEdge">
+        <classes>
+            <class name="LoginTest">
+                <parameters>
+                    <parameter name="browser" value="edge"/>
+                </parameters>
+            </class>
+        </classes>
+    </test>
+</suite>
